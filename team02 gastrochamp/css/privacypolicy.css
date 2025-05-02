@@ -1,0 +1,62 @@
+.pp-text {
+    background: var(--primary);
+    margin: 32px auto 32px auto;
+    padding: 32px 32px 32px 48px;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px var(--secondary);
+    font-size: 1.08rem;
+    color: var(--text-color);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.pp-text h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+}
+
+.pp-text h2 {
+    margin-top: 2em;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 0.5em;
+}
+
+.pp-text ul {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+    padding-left: 1.2em;
+}
+
+.pp-text li {
+    margin-bottom: 0.3em;
+    line-height: 1.5;
+}
+
+.pp-text p {
+    margin-bottom: 1em;
+    line-height: 1.7;
+}
+
+.pp-text strong {
+    font-weight: bold;
+}
+
+.pp-text a {
+    color: #1976d2;
+    text-decoration: underline;
+}
+
+.pp-text h3 {
+    font-size: 1.08rem;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}

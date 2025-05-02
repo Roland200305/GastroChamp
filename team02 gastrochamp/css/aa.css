@@ -1,0 +1,100 @@
+@import url(nav.css);
+
+.szotar{
+    border-bottom: 1px solid var(--secondary);
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px var(--secondary);
+}
+form.aa_form{
+    width:80%;
+    border-radius:10px;
+    margin: 0 auto;
+}
+.aa_form input[type="text"]{
+    display: block;
+}
+.szotar,.szinek,.hozzavalok,.eszkozok{
+    border: 1px solid var(--secondary);
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px var(--secondary);
+    margin-inline: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-block: 20px;
+}
+.item{
+    width:calc(25% - 10px);
+    margin-inline: 5px;
+    padding: 5px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 150px;
+    
+}
+input{
+    min-width: 100px;
+}
+button{
+    min-width: 50px;
+}
+@media(max-width:768px){
+    .aa_form{
+        width: 90%;
+    }
+    .aa_form *{
+        width: 90%;
+        margin-block: 5px;
+    }
+    .szotar,.szinek,.hozzavalok,.eszkozok{
+        text-align: center;
+    }
+}
+@media (max-width: 350px){
+    .szotar,.szinek,.hozzavalok,.eszkozok{
+        width:100%;
+    }
+    input{
+        min-width: 120px;
+    }
+    form.aa_form{
+        width:calc(100% - 20px)!important;
+        margin-inline: 10px;
+    }
+}
+@media (min-width: 768px){
+    main{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    h1{
+        width:100%;
+        display: block;
+        height:fit-content;
+    }
+    .szotar,.szinek,.hozzavalok,.eszkozok{
+        width:calc(33% - 20px);
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+    }
+    input,button{
+        width:80%;
+        margin-inline:auto !important;
+        margin-block: 5px;
+    }
+    .aa_form{
+        text-align: center;
+    }
+    .item{
+        width:calc(100% - 20px);
+        max-height:2em ;
+        margin-block: 5px;
+    }
+    
+}

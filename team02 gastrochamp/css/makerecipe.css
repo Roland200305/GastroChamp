@@ -1,0 +1,83 @@
+:root{
+    --ikonmeret:32px;
+    --vaszonmeret:80dvh;
+    --formmeret:42px;
+    --formelvalasztas:20px;
+}
+.instructions{
+    height:calc(var(--vaszonmeret) - var(--ikonmeret)*2 - var(--formmeret) - var(--formelvalasztas));
+    margin: 0 auto;
+    overflow: hidden;
+}
+h3,p{
+    width: 100%!important;
+    text-align: center!important;
+}
+
+.lepes{
+    height:calc(var(--vaszonmeret) / 5 - 20px);
+}
+.instructions p{
+    margin-block:0 ;
+}
+form.btns{
+    padding-top: var(--formelvalasztas)!important;
+}
+
+main > svg{
+    height:var(--ikonmeret);
+    width: 100%;
+}
+
+.disabled{
+    opacity:.5;
+    scale:.5;
+    cursor: not-allowed;
+}
+svg.disabled{
+    cursor: not-allowed;
+}
+input[type="file"]{
+    color:black;
+    display: block;
+    width:86vw;
+}
+button#up,button#down{
+    height:var(--ikonmeret)!important;
+    width:100%;
+    background-color: var(--secondary);
+
+}
+svg#up, svg#down{
+    height:var(--ikonmeret);
+    fill: var(--primary);
+}
+input[type="file" i]::-webkit-file-upload-button{
+    background-color: var(--primary)!important;
+    display: block!important;
+}
+@media (max-width: 767px){
+    form.btns {
+        width: 100%;
+    }
+    
+    input[type="file"] {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px){
+    form.btns {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    form.btns button {
+        width: 40%;
+    }
+    
+    main > svg:not(.disabled):hover {
+        fill: white;
+        background-color: var(--secondary);
+    }
+}

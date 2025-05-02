@@ -1,0 +1,98 @@
+.fb > svg{
+    fill:var(--text-color)!important;
+}
+.star{
+    display:inline-block;
+    height: .8em;
+    fill: var(--accent);
+}
+.navicon{
+    display: inline-block; height: 1.5em; 
+    fill: var(--primary);
+    margin-right:10px ;
+    margin-bottom: -6px;
+
+}
+.math{
+    height: 12px !important;
+    margin-right: 0px!important;
+    margin-top: -5px!important;
+    fill: var(--primary);
+}
+.list-item{
+    display: inline-block;
+    height: 1em !important;
+    fill: var(--accent);
+    aspect-ratio: 1;
+    margin-right: 5px;
+}
+.addicon{
+    display: inline-block; height: 3em; fill: var(--primary); 
+    padding:0;
+    margin: -20px;
+
+}
+svg.x{
+    height:1.25em;
+    fill:red;
+    display: inline-block;
+    margin-bottom: -3.5px;
+    margin-right: 10px;
+}
+svg.ok{
+    height: 1.25em;
+    fill:forestgreen;
+    display: inline-block;
+    margin-bottom: -3.5px;
+    margin-right: 10px;
+}
+svg.eye, svg.blind{
+    fill:var(--accent);
+    height: 2.5em;
+    display: inline-block;
+    margin: 0 auto;
+    width: 50%;
+    cursor: pointer;
+}
+
+svg.chef{
+    height: 3em;
+    text-align: center;
+    
+}
+.love{
+     
+    fill:var(--primary);
+    font-size: 20px;
+    stroke: black;
+    stroke-width: 20px;
+}
+.heart{
+    height: 3em;
+    width:63px;
+    cursor: pointer;
+}
+.heart:hover{
+    fill: red;
+    
+}
+.heart.r{
+    fill:red;
+}
+.heart.r:hover{
+    fill:var(--primary);
+}
+.settings{
+    fill:var(--secondary);
+    margin-inline:10px;
+    height: 24px;
+    min-width: 24px;
+}
+.settings:hover{
+    fill:var(--accent)!important;
+
+}
+.badge-icon{
+    font-size: 16px!important;
+    color: inherit;
+}

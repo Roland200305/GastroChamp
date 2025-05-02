@@ -1,0 +1,62 @@
+@import url("nav.css");
+h1,h2,h3{
+    text-align: center!important;
+    padding-block: 10px!important;
+    
+}
+footer a:not(.footer){
+    display: none!important;
+}
+p{
+    border: 1px solid var(--secondary);
+    margin-block: 5px;
+}
+.addicon{
+    height:16px;
+}
+.log{
+    width:calc(25% - 10px);
+    box-shadow: 5px 5px 5px var(--secondary);
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    margin-inline: 5px;
+    padding-block: 5px;
+    display: inline-flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+}
+.log span{
+    display:flex;
+    align-items: center;
+    margin-block: 5px;
+}
+span.comment{
+    max-width: 340px!important;
+    display: flex;
+    align-items: center;
+}
+
+.btns *:not(span){
+    height: 200px;
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+@media (max-width: 776px){
+    .log{
+        width:calc(33% - 10px);
+    }
+}
+@media(max-width: 580px){
+    .log{
+        width: calc(50% - 10px);
+    }
+}
+@media(max-width:390px){
+    .log{
+        width:calc(100% - 10px);
+    }
+}

@@ -1,0 +1,292 @@
+main{
+    margin-top: 110px!important;
+}
+.leaderboard{
+    width:80%;
+    box-shadow: 5px 5px 10px var(--secondary);
+    border: 3px solid var(--accent);
+    margin:0 auto;
+    margin-top: 120px;
+    border-radius: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: var(--primary);
+    height: 80dvh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+      
+.leaderboard::-webkit-scrollbar {
+    display: none; 
+  }
+.hof{
+    background-color: var(--primary);
+    border-radius:10px;
+    border: 3px solid var(--accent);
+    padding: 10px 20px;
+    margin-inline: auto;
+    margin-bottom: -152px;
+    position: relative;
+    width: max-content;
+    z-index: 100;
+    box-shadow: 5px 5px 10px var(--secondary);
+}
+.ranglista{
+    padding-top: 20px;
+}
+.person{
+    border: 1px solid var(--secondary);
+    list-style-type: none;
+    margin: 10px auto;
+    padding:5px;
+    padding-left: 0;
+    font-size: 1.5em;
+    line-height: 1.5;
+    border-radius: 10px;
+    width:calc(100% - 24px);
+    
+}
+#me{
+    border:3px solid var(--text-color);
+    font-weight: 700;
+    position: sticky;
+}
+.place{
+    font-weight: 900;
+    color:var(--primary);
+    background-color: var(--secondary);
+    padding:7.5px 15px;
+    border-radius: 9px;
+    margin-right: 50px;  
+}
+.place[ranking="1"]{
+    background-color: gold!important;
+}
+.place[ranking="2"]{
+    background-color: silver!important;
+}
+.place[ranking="3"]{
+    background-color: #cd7f32!important;
+}
+.me{
+    font-weight: 700;
+}
+.person[ranking="1"]{
+    background-color: rgba(255, 217, 0, .5)!important;
+    border: 3px solid gold;
+}
+.person[ranking="2"]{
+    background-color: rgba(192, 192, 192, .5);
+    border: 3px solid silver;
+
+}
+.person[ranking="3"]{
+    background-color: rgba(205, 128, 50, .5);
+    border: 3px solid #cd7f32;
+
+}
+
+
+
+.pts{
+    float:right;
+    margin-right: 12px;
+}
+.stat, .stat *, .stat:focus-visible{
+    font-size: 36px;
+    border:none!important;
+}
+option{
+    text-align: center;
+}
+option:focus-visible{
+    background-color: var(--accent);
+}
+.your-rank, .your-achievements{
+    text-align: center;
+    width: 95%;
+    margin: 20px auto;
+}
+.rank-indicator{
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+#kordiagramcim{
+    margin-block: 10px;
+}
+
+.other-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+
+}
+
+
+.other-info p{
+    font-size: 72px;
+    line-height: 2;
+}
+.circle{
+    width:200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+}
+.inner-circle{
+    background-color: var(--primary);
+    width:calc(100% - 30px);
+    aspect-ratio: 1;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    margin-left: calc(100% - calc(100% - 15px));
+    border-width: 1px;
+    border-style: solid;
+
+
+}
+
+.badge{
+    height:220px;
+    border-width: 3px;
+    border-style: solid;
+    aspect-ratio: 1;
+    display: inline-flex;
+    margin: 10px;
+    font-weight: 600;
+    flex-direction: column;
+    border-radius: 12px;
+    transition: 2s ease-out;
+    box-shadow: 10px 10px 10px var(--secondary);
+}
+.badge svg{
+    padding: 10px;
+    height: 72px;
+    width:72px;
+    margin: 10px auto;
+    border: inherit;
+    fill:inherit;
+    border-radius: 50%;
+}
+.Tanulóséf{
+    color: rgb(var(--Tanulóséf))!important;
+    border-color: rgb(var(--Tanulóséf))!important;
+    background-color: rgba(var(--Tanulóséf),0.5);
+    fill:rgb(var(--Tanulóséf));
+}
+
+.Fakanálforgató{
+    color: rgb(var(--Fakanálforgató))!important;
+    border-color: rgb(var(--Fakanálforgató))!important;
+    background-color: rgba(var(--Fakanálforgató),0.5);
+    fill:rgb(var(--Fakanálforgató));
+}
+
+.Serpenyőmágus{
+    color: rgb(var(--Serpenyőmágus))!important;
+    border-color: rgb(var(--Serpenyőmágus))!important;
+    background-color: rgba(var(--Serpenyőmágus),0.5);
+    fill:rgb(var(--Serpenyőmágus));
+
+}
+
+.Konyhatündér{
+    color: rgb(var(--Konyhatündér))!important;
+    border-color: rgb(var(--Konyhatündér))!important;
+    background-color: rgba(var(--Konyhatündér),0.5);
+    fill:rgb(var(--Konyhatündér));
+}
+
+.Ízmester{
+    color: rgb(var(--Ízmester))!important;
+    border-color: rgb(var(--Ízmester))!important;
+    background-color: rgba(var(--Ízmester),0.5);
+    fill:rgb(var(--Ízmester));
+}
+
+.Konyhafőnök{
+    color: rgb(var(--Konyhafőnök))!important;
+    border-color: rgb(var(--Konyhafőnök))!important;
+    background-color: rgba(var(--Konyhafőnök),0.5);
+    fill:rgb(var(--Konyhafőnök));
+}
+
+.Gasztroguru{
+    color: rgb(var(--Gasztroguru))!important;
+    border-color: rgb(var(--Gasztroguru))!important;
+    background-color: rgba(var(--Gasztroguru),0.5);
+    fill:rgb(var(--Gasztroguru));
+}
+
+.Legendás{
+    color: rgb(var(--Legendás))!important;
+    border-color: rgb(var(--Legendás))!important;
+    background-color: rgba(var(--Legendás),0.5);
+    fill:rgb(var(--Legendás));
+}
+.description{
+    font-size: 0.8rem;
+}
+.progress-bar{
+    width: 60%;
+    height: 16px;
+    background-color: inherit;
+    margin: 0 auto;
+    border: inherit;
+    margin-top: 10px;
+}
+.slider{
+
+    background-color: inherit;
+    backdrop-filter: brightness(.5);
+    max-width: calc(100% - 4px);
+    margin: 2px;
+    
+    height: calc(100% - 4px);
+}
+.badge-rank{
+    font-size: .8em;
+    width: 100%;
+    background-color: inherit;
+    color:var(--primary);
+    backdrop-filter: brightness(.5);
+    vertical-align: middle;
+    padding-bottom: 4px;
+    opacity: 0;
+    border-top-left-radius:9px;
+    border-top-right-radius:9px ;
+
+}
+@media(max-width:768px){
+    span.pont{
+        display: none;
+
+    }
+    .leaderboard{
+        width: 90%;
+    }
+    span.place{
+        margin-right: 10px;
+    }
+    .other-info{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+

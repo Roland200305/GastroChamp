@@ -1,0 +1,47 @@
+@import url("nav.css");
+
+form{
+    display: flex;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+}
+main{
+    margin:0;
+}
+form button{
+    padding:10px 25px;
+    border-radius: 10px;
+    color:var(--primary);
+    font-weight: 900;
+    border:3px solid transparent;
+}
+
+
+.new{
+    font-weight: 500;
+}
+.notifications > *{
+    display: flex;
+    padding:10px;
+    width: 90%;
+    justify-content: space-between;
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    margin:15px auto;
+    box-shadow: 5px 5px 5px var(--secondary);
+}
+.howlongago{
+    color:var(--secondary);
+    margin-right: 20px;
+}
+
+@media (max-width:768px) {
+    button{
+        padding: 10px!important;
+    }
+    
+
+    
+}

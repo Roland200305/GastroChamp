@@ -1,0 +1,236 @@
+@import url("svg.css");
+@import url("animations.css");
+
+:root{
+    --primary:#FFFFFF;
+    --secondary:#464f59;
+    --accent:#e1ad01;
+    --text-color:black;
+    --Tanulóséf:133, 127, 127;
+    --Fakanálforgató: 99, 69, 58;
+    --Serpenyőmágus:58, 88, 102;
+    --Konyhatündér:30, 168, 53;
+    --Ízmester:181, 115, 18; 
+    --Konyhafőnök:189, 41, 30;
+    --Gasztroguru:25, 103, 166;
+    --Legendás:67, 34, 125;
+    --navmagassag: 70px;
+
+}
+main{
+    background-color: var(--primary);
+    min-height: calc(100dvh - var(--navmagassag)*2);
+    margin-top: var(--navmagassag);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .5s;
+}
+hr{
+    border-color: transparent;
+}
+
+.clearfix::after, .clearfix::before{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    z-index:10000;
+}
+nav,footer{
+    background-color: var(--secondary);
+    height: var(--navmagassag);
+}
+footer.admin-footer a:not(.footer){
+    display: none;
+}
+a{
+    color:initial;
+    text-decoration: none;
+}
+.right{
+    float:right;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: var(--secondary);
+}
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 20px;
+    width: 20%;
+    color: var(--primary);
+    font-weight: 900;
+    text-align: center;
+}
+
+nav a span {
+    margin-left: 8px;
+}
+nav a:first-child{
+    display: flex;
+    padding-bottom: 3px;
+    padding-top: 4px;
+    padding-block: 9px;
+
+}
+nav a:first-child > span{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: flex-start;
+}
+nav:first-child() * :not(.profile-photo){
+    margin-top: -10px;
+}
+
+a.add-new{
+    padding-inline: 40px;
+    padding-block: 30px;
+}
+.profile-photo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+    margin-top: 10px;
+}
+footer a{
+    display: inline-block;
+    color:var(--primary);
+    font-weight: 900;
+    padding:24.2px 30px;
+
+}
+
+#random{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: -5px;
+}
+
+.menu-icon {
+    display: none;
+    padding: 24.2px 30px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+}
+button:hover{
+    cursor: pointer;
+}
+button:disabled{
+    opacity: .5;
+    cursor: not-allowed;
+}
+input.make, button.make{
+    background-color: var(--accent);
+    border: 3px solid var(--accent);
+    color:var(--primary);
+    padding-block: 8px;
+    border-radius: 12px;
+    font-weight: 900;
+}
+
+input.ban, button.ban{
+    background-color: red;
+    border: 3px solid transparent;
+    color: var(--primary);
+    padding-block: 8px;
+    border-radius: 12px;
+    font-weight: 900;
+}
+
+.active {
+    background-color: var(--accent) !important;
+}
+
+@media (max-width: 768px) {
+    nav a span {
+        display: none!important;
+    }
+    nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a {
+        padding: 25px calc(10% - 19px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .add-new {
+        transform: translate(0px, 0px);
+        border: 3px solid white;
+        padding: 25px !important;
+        width: 50px;
+        height: 50px; 
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        height:max-content;
+    }
+    footer *{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px){
+    a:hover, input[type="submit"]:hover{
+        cursor: pointer!important;
+    }
+    nav a:hover{
+        background-color: var(--accent) !important;
+    }
+    footer a:hover{
+        color:var(--accent);
+        text-shadow: 2px 2px 1px var(--text-color);
+    }
+    nav a:not(#add){
+        width:22.5%;
+    }
+    nav a#add{
+        width:10%;
+    }
+}
+@media (max-width: 400px) {
+    button{
+        width: 60%;
+        display: block;
+        width:calc(50% - 20px);
+        min-width: 250px;
+        margin: 5px auto;
+    }
+    
+}

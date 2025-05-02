@@ -1,0 +1,274 @@
+@import url("nav.css");
+.left{
+    float:left;
+    padding-top:30px;
+    
+
+}
+.top,.stars{
+    position:fixed ;
+    background-color: var(--primary);
+    z-index: 1000;
+    width:100%;
+}
+
+.searchbar{
+  font-size: 24px;
+  width: 80%;
+  margin-inline: 10%;
+  border: 3px solid var(--text-color);
+}
+
+.topside{
+    display:flex;
+    width:100%;
+    align-items: center;
+}
+
+hr{
+    color:var(--secondary);
+}
+h1{
+    text-align: center;
+}
+.foodies{
+    width:calc(100% - 20px);
+    margin: 0 auto;
+    min-height: 83dvh;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start!important;
+    align-content: flex-start;
+}
+
+.arrow{
+    display: flex;
+    width: 9%;
+    justify-content: center;
+    line-height: 0.98;
+    font-size: 48px;
+    cursor: pointer;
+    height: 50px;
+    background: var(--primary);
+    user-select: none!important;
+}
+
+.arrow:active{
+    transition: .5s;
+    background-color: var(--accent);
+    color:var(--text-color);
+}
+.scrolling-menu{
+    width:85%;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+.tagek{
+    height:50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.szurok{
+    padding:5px 40px;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    font-weight: 500;
+    margin:0 50px;
+   
+    display: inline-block;
+}
+.szurok:not(.s){
+    margin-top: 10px;
+    width:150px;
+    text-align: center;
+    padding:5px 0;
+}
+
+
+.stars{
+    height:50px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; 
+    margin: 0 auto;
+    margin-top: 48px;
+    align-items: center;
+}
+.szurok.s{
+    margin-left:10px;
+    margin-right: 10px;
+}
+.tile{
+    width: calc(25% - 4px);
+    margin:2px;
+    aspect-ratio: 1;
+    border: 1px solid var(--secondary);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height:1.2;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-size: cover!important;
+    filter:brightness(0.75);
+    transition: filter .5s ease;
+    border-radius: 5px;
+}
+.tile *{
+    display:flex;
+    margin-right: 10px;
+    font-size: 24px;
+    justify-content: flex-end;
+    color:var(--primary);
+}
+.rejtett{
+    display: none;
+}
+
+.foodtags{
+    width:98%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    height:130px;
+    align-content: flex-start;
+    overflow:hidden;
+}
+.tag{
+    border:1px solid var(--primary);
+    font-size: 18px;
+    padding:4px 16px;
+    border-radius: 10px;
+    margin-top: 12px;
+    cursor:default!important;
+    height:31px;
+}
+.tagged{
+    background-color: var(--accent)!important;
+    color:var(--text-color);
+    font-weight: 500;
+
+}
+.searched{
+    background-color: var(--accent);
+}
+.btn{
+    color: var(--primary);
+    border: 3px solid var(--primary);
+    background-color: var(--accent);
+    width: max-content;
+    display: block;
+    padding:15px 50px;
+    margin: 10px auto;
+    border-radius: 25px;
+}
+
+
+
+.foodname{
+  margin-right: 14px;
+}
+.foodrating{
+    margin-right: 4px;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .foodies {
+      width: calc(100% - 40px);
+    }
+    
+    .tile {
+      width: calc(33.33% - 4px);
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .tile {
+      width: calc(50% - 4px);
+    }
+    
+    .scrolling-menu {
+      width: 80%;
+    }
+    
+    .arrow {
+      width: 10%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    nav a {
+      padding: 24.2px 15px;
+    }
+    
+    .profile {
+      width: 30%;
+    }
+    
+    .stars {
+      flex-wrap: wrap;
+    }
+    
+    .szurok.s {
+      margin: 5px;
+    }
+  }
+  @media(max-width: 610px){
+    .szurok.s {
+      padding-inline:15px;
+    }
+  }  
+  @media only screen and (max-width: 576px) {
+    .tile {
+      width: calc(100% - 4px);
+    }
+    
+    .scrolling-menu {
+      width: 70%;
+    }
+    
+    .arrow {
+      width: 15%;
+    }
+    
+    .szurok:not(.s) {
+      width: calc(100% - 20px);
+      margin: 5px 10px;
+    }
+    .foodies {
+      width: calc(100%);
+    }
+    .profile {
+      width: 50%;
+    }
+  }
+  @media(max-width: 370px){
+    .szurok.s {
+      padding-inline:10px;
+    }
+  }
+  @media (min-width: 768px){
+    .btn:hover{
+      color: var(--text-color);
+      border:3px solid var(--text-color);
+    }
+    a.tile:hover{
+      background: linear-gradient(to top, rgba(0,0,0,.7), rgba(0,0,0,.9), inherit)!important;
+      filter:brightness(1.2);
+    }
+    .szurok:hover{
+      color:var(--primary);
+      background-color: var(--secondary);
+      cursor: pointer;
+      
+    }
+    .arrow:hover{
+      transition: .5s;
+      background-color: var(--secondary);
+      color:var(--primary);
+
+    } 
+  }  
